@@ -1,0 +1,82 @@
+[
+  {
+    "id": "623df903c246d3d2cc571e00",
+    "index": 0,
+    "price": "$3,005.46",
+    "picture": "./image/LG 65NANO90UPA Alexa Built-In NanoCell 90 Series.jpg",
+    "name": "LG",
+    "model": "65NANO90UPA Alexa Built-In NanoCell 90 Series"
+  },
+  {
+    "id": "623df903eac6225112974023",
+    "index": 1,
+    "price": "$1,603.14",
+    "picture": "./image/LG OLED A1 Series 65” Alexa Built-in 4k Smart TV.jpg",
+    "name": "LG",
+    "model": "OLED A1 Series 65” Alexa Built-in 4k Smart TV"
+  },
+  {
+    "id": "623df9036cf911ac5ecc5ba9",
+    "index": 2,
+    "price": "$3,923.50",
+    "picture": "./image/RCA 32-inch Flat Screen 720p.jpg",
+    "name": "RCA",
+    "model": "32-inch Flat Screen 720p.jpg"
+  },
+  {
+    "id": "623df903075d35f51bab3a22",
+    "index": 3,
+    "price": "$3,560.78",
+    "picture": "./image/SAMSUNG 75-Inch Class Crystal UHD AU8000 Series.jpg",
+    "name": "SAMSUNG",
+    "model": "75-Inch Class Crystal UHD AU8000 Series"
+  },
+  {
+    "id": "623df90375317a015e699c6b",
+    "index": 4,
+    "price": "$3,577.03",
+    "picture": "./image/SAMSUNG 85-Inch Class QLED Q60A Series.jpg",
+    "name": "SAMSUNG",
+    "model": "85-Inch Class QLED Q60A Series.jpg"
+  },
+  {
+    "id": "623df9037822f9a8a231e05b",
+    "index": 5,
+    "price": "$3,855.52",
+    "picture": "./image/LG 65NANO90UPA Alexa Built-In NanoCell 90 Series.jpg",
+    "name": "LG",
+    "model": "65NANO90UPA Alexa Built-In NanoCell 90 Series"
+  },
+  {
+    "id": "623df903ffebc4669425a353",
+    "index": 6,
+    "price": "$2,137.44",
+    "picture": "./image/LG OLED A1 Series 65” Alexa Built-in 4k Smart TV.jpg",
+    "name": "LG",
+    "model": "OLED A1 Series 65” Alexa Built-in 4k Smart TV"
+  },
+  {
+    "id": "623df903f26749bc25de9405",
+    "index": 7,
+    "price": "$3,246.52",
+    "picture": "./image/RCA 32-inch Flat Screen 720p.jpg",
+    "name": "RCA",
+    "model": "32-inch Flat Screen 720p"
+  },
+  {
+    "id": "623df903790b03b29d048b97",
+    "index": 8,
+    "price": "$3,239.00",
+    "picture": "./image/SAMSUNG 75-Inch Class Crystal UHD AU8000 Series.jpg",
+    "name": "SAMSUNG",
+    "model": "75-Inch Class Crystal UHD AU8000 Series"
+  },
+  {
+    "id": "623df903c700dee76c2f520c",
+    "index": 9,
+    "price": "$3,318.54",
+    "picture": "./image/SAMSUNG 75-Inch Class Crystal UHD AU8000 Series.jpg",
+    "name": "SAMSUNG",
+    "model": "75-Inch Class Crystal UHD AU8000 Serie"
+  }
+]
