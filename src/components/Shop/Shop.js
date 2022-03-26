@@ -10,6 +10,7 @@ const Shop = () => {
     let [cart, setCart] = useState([]);
     const [selectedProduct, setSelectedProduct] = useState([])
     let [warning, setWarning] = useState('');
+    let count = cart.length
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -56,10 +57,10 @@ const Shop = () => {
     }
     return (
         <div>
-            <Header></Header>
+            <Header count ={count}></Header>
             <div className='shop'>
-                <Products products={products} clickHandle={addToCart}></Products>
-                <Cart cart={cart} clearCart={clearCart} selectedProduct={selectedProduct} choseProduct={choseProduct} warning={warning} deleteItem={deleteItem}></Cart>
+                <Products className='products' products={products} clickHandle={addToCart}></Products>
+                <Cart className='cart' cart={cart} clearCart={clearCart} selectedProduct={selectedProduct} choseProduct={choseProduct} warning={warning} deleteItem={deleteItem}></Cart>
             </div>
             <QueAns></QueAns>
         </div>

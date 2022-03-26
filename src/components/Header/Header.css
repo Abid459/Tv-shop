@@ -1,4 +1,40 @@
 .header{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.header-title{
     text-align: center;
     padding:20px 0;
 }
+.cartShopping{
+    /* background: #000; */
+    padding: 40px;
+    color: #000;
+}
+.cartcount{
+    position: fixed;
+    right:230px;
+    top:0px;
+    z-index: 10;
+}
+.count{
+    position: absolute;
+    top:30px;
+    left:70px;
+    color: brown;
+    background: rgb(255, 255, 255);
+    padding: 4px;
+    border-radius: 30%;
+
+}
+.cartShopping{
+    width: 40px;
+    height: 40px;
+    /* padding: 20px; */
+}
+@media only screen and (max-width: 600px) {
+    .cartcount{
+        top:0;
+        right: 0;
+    }
+  }

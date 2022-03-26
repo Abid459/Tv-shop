@@ -9,6 +9,9 @@ const Cart = ({ cart, clearCart, choseProduct, selectedProduct, warning, deleteI
             <div className="cart" >
 
                 <h2>Added product</h2>
+                <div className="cartcount">
+                
+            </div>
                 <hr />
                 {
                     cart.map(product => <CartProduct productInCart={product}

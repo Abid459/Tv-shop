@@ -4,3 +4,8 @@
     grid-gap: 15px;
     padding:10px 90px;
 }
+@media only screen and (max-width: 600px) {
+    .products{
+        grid-template-columns: 1fr;
+    }
+  }

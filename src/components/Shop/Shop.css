@@ -1,4 +1,29 @@
-.shop{
+.shop {
     display: grid;
     grid-template-columns: 80% 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .shop {
+        grid-template-columns: 1fr;
+    }
+    .products{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        /* background: #000; */
+
+    }
+    .cart {
+        /* background: #000; */
+        grid-row: 1 /  2;
+        position:fixed;
+        height: auto;
+        top:8px;
+        right: 0;
+        background: #000;
+        color: antiquewhite;
+        opacity: .8;
+        display: none;
+        
+    }
 }
