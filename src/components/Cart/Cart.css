@@ -1,0 +1,6 @@
+.cart{
+    position: sticky;
+    top:10px;
+    height:100vh;
+    /* background: #000; */
+}

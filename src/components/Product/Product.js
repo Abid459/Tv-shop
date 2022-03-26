@@ -1,9 +1,16 @@
 import React from 'react';
+import './product.css'
 
-const Product = () => {
-    return (
-        <div>
-            <h2>this is a product</h2>
+const Product = (props) => {
+    const {clickHandle,productInfo} = props
+    const {name:brand,id,picture:img,price,model}=productInfo;
+        return (
+        <div className='product'>
+            <img src={img} alt="" />
+            <h2>Brand: {brand}</h2>
+            <p>Model: {model}</p>
+            <h3>Price: {price}</h3>
+            <button onClick={()=>clickHandle(productInfo)}>Add to Cart</button>
         </div>
     );
 };
