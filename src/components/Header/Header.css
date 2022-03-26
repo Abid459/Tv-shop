@@ -36,5 +36,6 @@
     .cartcount{
         top:0;
         right: 0;
+        cursor: pointer;
     }
   }
