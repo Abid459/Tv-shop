@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
-import Modal from '../Modal/Modal';
 import Products from '../Products/Products';
 import './Shop.css'
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
     let [cart, setCart] = useState([]);
+    const [selectedProduct,setSelectedProduct] = useState([])
+    let [warning,setWarning] = useState('');
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -16,22 +17,28 @@ const Shop = () => {
         cart = [];
         setCart(cart);
     }
-    const choseOne = () => {
-        const randNum =Math.floor( Math.random()*4);
-        console.log(randNum)
-        return(
-            <div>
-                <Modal></Modal>
-            </div>
-        )
+    const choseProduct = () => {
+        const randRange = cart.length
+        const randNum = Math.floor(Math.random() * randRange);
+        const selectProduct = cart[randNum]
+        setSelectedProduct(selectProduct)
+
     }
     const addToCart = (product) => {
         const { id } = product;
         let newCart = [...cart];
         const isExist = newCart.find(x => x.id === id);
         if (isExist) {
-            return;
-        } else {
+         warning ='You cant add one item twice'
+         setWarning(warning)
+         return;
+        }else if(newCart.length>=4){
+            warning = "You can't add more than four items"
+            setWarning(warning)
+        } 
+        else {
+            warning =''
+            setWarning(warning)
             newCart.push(product);
             setCart(newCart);
         }
@@ -39,8 +46,7 @@ const Shop = () => {
     return (
         <div className='shop'>
             <Products products={products} clickHandle={addToCart}></Products>
-            <Cart cart={cart} clearCart={clearCart} choseOne={choseOne}></Cart>
-            <Modal></Modal>
+            <Cart cart={cart} clearCart={clearCart} selectedProduct= {selectedProduct} choseProduct={choseProduct} warning={warning}></Cart>
         </div>
     );
 };

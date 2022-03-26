@@ -1,6 +1,9 @@
 .cart{
-    position: sticky;
-    top:10px;
-    height:100vh;
+    /* position: fixed; */
+    /* top:10px;
+    height:100vh; */
     /* background: #000; */
+}
+.modal{
+
 }
