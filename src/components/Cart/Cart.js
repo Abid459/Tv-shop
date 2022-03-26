@@ -3,30 +3,27 @@ import CartProduct from '../CartProduct/CartProduct';
 import ChosedProduct from '../ChosedProduct/ChosedProduct';
 import './Cart.css'
 
-const Cart = ({ cart, clearCart, choseProduct, selectedProduct, warning }) => {
-    console.log('selected product', selectedProduct)
-
-    console.log(cart)
-
-
+const Cart = ({ cart, clearCart, choseProduct, selectedProduct, warning, deleteItem }) => {
     return (
         <div >
-            <div className="cart">
+            <div className="cart" >
 
                 <h2>Added product</h2>
                 {
                     cart.map(product => <CartProduct productInCart={product}
-                        key={cart.id}
+                        key={cart.model}
+                        deleteItem={deleteItem}
                     ></CartProduct>)
                 }
                 <h4>{warning}</h4>
+                <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={choseProduct}>
+                    Chose one for me
+                </button>
+                <button onClick={clearCart}>Clear Cart</button>
             </div>
 
 
 
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={choseProduct}>
-                Chose one for me
-            </button>
 
 
             <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -49,7 +46,7 @@ const Cart = ({ cart, clearCart, choseProduct, selectedProduct, warning }) => {
                 </div>
             </div>
             {/* modal end */}
-            <button onClick={clearCart}>Clear Cart</button>
+
         </div>
 
     );

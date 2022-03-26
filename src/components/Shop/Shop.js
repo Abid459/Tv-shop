@@ -15,8 +15,17 @@ const Shop = () => {
     }, [])
     const clearCart = () => {
         cart = [];
+        warning = ''
+        setWarning(warning);
         setCart(cart);
     }
+const deleteItem = (id) =>{
+    // const remainCart = [];
+    const remainCart = cart.filter(product=>product.id!==id)
+    setCart(remainCart)
+
+}
+
     const choseProduct = () => {
         const randRange = cart.length
         const randNum = Math.floor(Math.random() * randRange);
@@ -46,7 +55,7 @@ const Shop = () => {
     return (
         <div className='shop'>
             <Products products={products} clickHandle={addToCart}></Products>
-            <Cart cart={cart} clearCart={clearCart} selectedProduct= {selectedProduct} choseProduct={choseProduct} warning={warning}></Cart>
+            <Cart cart={cart} clearCart={clearCart} selectedProduct= {selectedProduct} choseProduct={choseProduct} warning={warning}deleteItem={deleteItem}></Cart>
         </div>
     );
 };

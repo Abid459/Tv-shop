@@ -11,3 +11,6 @@
 .cartProduct p{
     font-size: .8rem;
 }
+.cartProduct FontAwesomeIcon {
+    cursor: pointer;
+}
