@@ -7,15 +7,14 @@ const Cart = ({ cart, clearCart, choseProduct, selectedProduct, warning, deleteI
     return (
         <div >
             <div className="cart" >
-
                 <h2>Added product</h2>
                 <div className="cartcount">
-                
-            </div>
+
+                </div>
                 <hr />
                 {
                     cart.map(product => <CartProduct productInCart={product}
-                        key={cart.model}
+                        key={product.id}
                         deleteItem={deleteItem}
                     ></CartProduct>)
                 }

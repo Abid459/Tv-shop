@@ -11,7 +11,7 @@ const CartProduct = (props) => {
         <div className='cartProduct'>
             <img src={picture} alt="" />
             {/* <h4>{name}</h4> */}
-            <p><h6 >{name}</h6>: {model}</p>
+            <p><b >{name}</b>: {model}</p>
             <FontAwesomeIcon className='fontawsome' icon={faTrash} onClick={()=>deleteItem(id)}></FontAwesomeIcon>
         </div>
     );

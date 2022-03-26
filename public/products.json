@@ -29,7 +29,7 @@
     "price": "$3,560.78",
     "picture": "./image/SAMSUNG 75-Inch Class Crystal UHD AU8000 Series.jpg",
     "name": "SAMSUNG",
-    "model": "75-Inch Class Crystal UHD AU8000 Series"
+    "model": "85-Inch Class Crystal UHD AU8700 Series"
   },
   {
     "id": "623df90375317a015e699c6b",
@@ -37,7 +37,7 @@
     "price": "$3,577.03",
     "picture": "./image/SAMSUNG 85-Inch Class QLED Q60A Series.jpg",
     "name": "SAMSUNG",
-    "model": "85-Inch Class QLED Q60A Series.jpg"
+    "model": "85-Inch Class QLED Q60A Series"
   },
   {
     "id": "623df9037822f9a8a231e05b",
@@ -45,7 +45,7 @@
     "price": "$3,855.52",
     "picture": "./image/LG 65NANO90UPA Alexa Built-In NanoCell 90 Series.jpg",
     "name": "LG",
-    "model": "65NANO90UPA Alexa Built-In NanoCell 90 Series"
+    "model": "689JAS Alexa Built-In NanoCell 100 Series"
   },
   {
     "id": "623df903ffebc4669425a353",
@@ -59,9 +59,9 @@
     "id": "623df903f26749bc25de9405",
     "index": 7,
     "price": "$3,246.52",
-    "picture": "./image/RCA 32-inch Flat Screen 720p.jpg",
-    "name": "RCA",
-    "model": "32-inch Flat Screen 720p"
+    "picture": "./image/TCL 32-inch 3-Series 720p Roku Smart TV.jpg",
+    "name": "TCL",
+    "model": "TCL 32-inch 3-Series 720p Roku Smart TV"
   },
   {
     "id": "623df903790b03b29d048b97",
@@ -75,8 +75,8 @@
     "id": "623df903c700dee76c2f520c",
     "index": 9,
     "price": "$3,318.54",
-    "picture": "./image/SAMSUNG 75-Inch Class Crystal UHD AU8000 Series.jpg",
+    "picture": "./image/SAMSUNG 32 inch Class FRAME QLED LS Series.jpg",
     "name": "SAMSUNG",
-    "model": "75-Inch Class Crystal UHD AU8000 Serie"
+    "model": "SAMSUNG 32 inch Class FRAME QLED LS Series"
   }
 ]
